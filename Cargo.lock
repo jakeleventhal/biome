@@ -1519,6 +1519,7 @@ dependencies = [
  "similar-asserts",
  "smallvec",
  "tests_macros",
+ "unicode-width 0.1.12",
 ]
 
 [[package]]
