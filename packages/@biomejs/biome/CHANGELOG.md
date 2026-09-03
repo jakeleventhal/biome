@@ -1,5 +1,11 @@
 # @biomejs/biome
 
+## 2.5.13
+
+### Patch Changes
+
+- [#11595](https://github.com/biomejs/biome/pull/11595) [`a64d757`](https://github.com/biomejs/biome/commit/a64d7572d5684f3555be5dc02eb1d29a16f290dc) Thanks [@dyc3](https://github.com/dyc3)! - Added the nursery Vue-domain rule [`useVueBaseImport`](https://biomejs.dev/linter/rules/use-vue-base-import/) rule, which enforces importing Vue APIs from `vue` instead of internal `@vue/*` packages.
+
 ## 2.5.12
 
 ### Patch Changes
