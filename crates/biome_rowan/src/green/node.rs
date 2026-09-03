@@ -636,10 +636,8 @@ mod tests {
             GreenTrivia::new([TriviaPiece::single_line_comment(2)]),
             GreenTrivia::empty(),
         );
-        let comment_node = GreenNode::new(
-            RawSyntaxKind(0),
-            [Some(GreenElement::Token(comment_token))],
-        );
+        let comment_node =
+            GreenNode::new(RawSyntaxKind(0), [Some(GreenElement::Token(comment_token))]);
         assert!(comment_node.has_comments());
         assert!(!comment_node.has_skipped());
 
@@ -649,10 +647,8 @@ mod tests {
             GreenTrivia::new([TriviaPiece::new(TriviaPieceKind::Skipped, 1)]),
             GreenTrivia::empty(),
         );
-        let skipped_node = GreenNode::new(
-            RawSyntaxKind(0),
-            [Some(GreenElement::Token(skipped_token))],
-        );
+        let skipped_node =
+            GreenNode::new(RawSyntaxKind(0), [Some(GreenElement::Token(skipped_token))]);
         assert!(!skipped_node.has_comments());
         assert!(skipped_node.has_skipped());
 
